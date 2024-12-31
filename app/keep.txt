@@ -1,0 +1,32 @@
+import React from "react";
+
+const Page = () => {
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",  // Keeps the container taking up the full viewport height
+    fontFamily: "Arial, sans-serif",
+  };
+
+  const boxStyle = {
+    textAlign: "center",
+    padding: "20px",
+    border: "1px solid #ccc",
+    borderRadius: "8px",
+    backgroundColor: "#f9f9f9",
+    height: "1000vh",  // Very tall container, stretches the content
+    width: "300px",  // Fixed width for the container
+  };
+
+  return (
+    <div style={containerStyle}>
+      <div style={boxStyle}>
+        <h1>Centered Container</h1>
+        <p>This is a simple centered container in Next.js with TypeScript</p>
+      </div>
+    </div>
+  );
+};
+
+export default Page;
